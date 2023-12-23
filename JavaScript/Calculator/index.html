@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <div class="result" id="Answer">0</div>
+            </div>
+            <div class="buttons">
+                <div class="upperbuttons">
+                    <div class="characters" id="AC" onclick="allclear()">AC</div>
+                    <div class="characters" id="delete" onclick="del('1')">delete</div>
+                    <div class="characters" id="percent" onclick="character('%')">%</div>
+                    <div class="characters" id="divide" onclick="character('/')">/</div>
+                </div>
+                <div class="upperbuttons">
+                    <div class="num" id="Seven" onclick="Add('7')">7</div>
+                    <div class="num" id="Eight" onclick="Add('8')">8</div>
+                    <div class="num" id="Nine" onclick="Add('9')">9</div>
+                    <div class="characters" id="times" onclick="character('*')">*</div>
+                </div>
+                <div class="upperbuttons">
+                    <div class="num" id="Four" onclick="Add('4')">4</div>
+                    <div class="num" id="Five" onclick="Add('5')">5</div>
+                    <div class="num" id="Six" onclick="Add('6')">6</div>
+                    <div class="characters" id="minus" onclick="character('-')">-</div>
+                </div>
+                <div class="upperbuttons">
+                    <div class="num" id="one" onclick="Add('1')">1</div>
+                    <div class="num" id="two" onclick="Add('2')">2</div>
+                    <div class="num" id="three" onclick="Add('3')">3</div>
+                    <div class="characters" id="plus" onclick="character('+')">+</div>
+                </div>
+                <div class="upperbuttons">
+                    <div class="characters" id="one" onclick="allclear()">ac</div>
+                    <div class="num" id="one" onclick="Add('0')">0</div>
+                    <div class="num" id="period" onclick="character('.')">.</div>
+                    <div class="characters" id="equal" onclick="result()">=</div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
